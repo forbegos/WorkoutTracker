@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongpdb://localhost/workout", {
 app.get("/api/workouts", (req, res) => {
   db.Workout.find({})
     .then((dbWorkout) => {
-      res.json(dbWorkkout);
+      res.json(dbWorkout);
     })
     .catch((err) => {
       res.json(err);
