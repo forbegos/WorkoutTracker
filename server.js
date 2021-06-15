@@ -37,8 +37,8 @@ app.post("/api/workouts", ({ body }, res) => {
     });
 });
 
-app.put("/api/workouts/:id", ({ body }, res) => {
-  db.Workout.updateOne({ id: req.params.id }, { $push: { exercise: body } })
+app.put("/api/workouts/:id", (req, res) => {
+  db.Workout.updateOne({ id: req.params.id }, { $push: { exercise: req.body } })
     .then((dbWorkout) => {
       res.json(dbWorkout);
     })
