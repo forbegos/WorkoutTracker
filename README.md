@@ -1,6 +1,6 @@
 # WorkoutTracker
 
-## Javascript application using MongoDB and Mongoose to track your workouts during a 7 day period. The application tracks duration, weights, sets and reps and you can create new workouts (cardio or resistance) if needed.
+Javascript application using MongoDB and Mongoose to track your workouts during a 7 day period. The application tracks duration, weights, sets and reps and you can create new workouts (cardio or resistance) if needed.
 
 ## Technologies Used
 
@@ -17,8 +17,8 @@ The application can be launched via: https://warm-eyrie-81346.herokuapp.com/
 
 ## Screenshots
 
-![](.public/assets/img/Screen Shot 2021-06-16 at 4.46.40 PM.png)
-![](.public/assets/img/Screen Shot 2021-06-16 at 4.47.20 PM.png)
+![](.public/assets/img/Shot2.png)
+![](.public/assets/img/Shot1.png)
 
 ## License
 
