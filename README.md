@@ -17,8 +17,8 @@ The application can be launched via: https://warm-eyrie-81346.herokuapp.com/
 
 ## Screenshots
 
-![](.public/assets/img/Shot2.png)
-![](.public/assets/img/Shot1.png)
+![](img/Shot1.png)
+![](img/Shot1.png)
 
 ## License
 
