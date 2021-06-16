@@ -1,6 +1,6 @@
 # WorkoutTracker
 
-## Javascript application using MongoDB and Mongoose to track your workouts during a 7 day period. The application tracks duration, weights, sets and reps and you can create new workouts (cardio or resistance) if needed.
+Javascript application using MongoDB and Mongoose to track your workouts during a 7 day period. The application tracks duration, weights, sets and reps and you can create new workouts (cardio or resistance) if needed.
 
 ## Technologies Used
 
