@@ -17,35 +17,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongpdb://localhost/workout", {
   useNewUrlParser: true,
 });
 
-app.get("/api/workouts", (req, res) => {
-  db.Workout.find({})
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
-
-app.post("/api/workouts", ({ body }, res) => {
-  db.Workout.create(body)
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
-
-app.put("/api/workouts/:id", (req, res) => {
-  db.Workout.updateOne({ id: req.params.id }, { $push: { exercise: req.body } })
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
+app.use(require("./routes/htmlRoutes"));
+app.use(require("./routes/htmlRoutes"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
